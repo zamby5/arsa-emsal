@@ -825,7 +825,7 @@ export default function App() {
                   ]} layout="vertical" margin={{ left:4, right:20 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke={th.chartGrid} horizontal={false} />
                     <XAxis type="number" tick={TT} tickFormatter={v=>(v/1e6).toFixed(1)+"M"} />
-                    <YAxis type="category" dataKey="name" tick={TT} width:70 />
+                    <YAxis type="category" dataKey="name" tick={TT} width={70} />
                     <Tooltip formatter={v=>ƒ.tlF(v)} contentStyle={tipStyle} />
                     <Bar dataKey="val" radius={[0,4,4,0]}>
                       {[th.red,"#dc7b2a","#f59e0b",th.text3].map((c,i)=><Cell key={i} fill={c} />)}
