@@ -3,26 +3,34 @@
   "short_name": "Arsa Emsal",
   "description": "Gayrimenkul Yatırım Fizibilite Sistemi",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "background_color": "#05090f",
   "theme_color": "#c9a84c",
   "orientation": "any",
+  "lang": "tr",
+  "categories": ["finance", "business"],
   "icons": [
     {
       "src": "/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "/icon.svg",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
-    },
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
     {
       "src": "/icon.svg",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
     }
   ]
 }
