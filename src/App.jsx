@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-<title>🚁 Drone Parsel Simülatörü</title>
-<link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet">
-<script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@300;600;800&display=swap');
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --c-bg:#02040e;--c-border:rgba(0,200,255,.18);--c-accent:#00c8ff;
-  --c-red:#ff2a00;--c-green:#00e87a;--c-gold:#ffb300;
-  --c-panel:rgba(2,8,22,.94);--c-text:#8ab4cc;
-  --ff:'Share Tech Mono',monospace;--ff2:'Exo 2',sans-serif;
-}
-html,body{height:100%;overflow:hidden;background:var(--c-bg);color:#cde;font-family:var(--ff)}
-::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#050510}
-::-webkit-scrollbar-thumb{background:rgba(0,200,255,.25);border-radius:3px}
-
-/* ── FORM ─────────────────────────────────────── */
-#form-screen{
-  height:100vh;display:flex;align-items:center;justify-content:center;
-  background:radial-gradient(ellipse at 50% 60%,#041428 0%,#020610 70%);
-}
-.fbox{
-  background:rgba(2,10,28,.97);border:1px solid rgba(0,200,255,.28);
-  border-radius:22px;padding:42px 38px;width:430px;
-  box-shadow:0 0 80px rgba(0,150,255,.15),0 0 200px rgba(0,100,200,.06),inset 0 0 40px rgba(0,80,180,.05);
-}
-.fbox-logo{text-align:center;margin-bottom:18px}
-.fbox-logo .icon{font-size:52px;filter:drop-shadow(0 0 20px rgba(0,210,255,.9))}
-.fbox-title{font-family:var(--ff2);font-weight:800;font-size:22px;color:var(--c-accent);
-  letter-spacing:6px;text-align:center;text-shadow:0 0 30px #0af}
-.fbox-sub{font-size:9px;color:#2a3a4a;letter-spacing:3px;text-align:center;margin:6px 0 0}
 .fhr{height:1px;background:linear-gradient(90deg,transparent,#0af,transparent);margin:18px 0}
 .flabel{font-size:9px;color:var(--c-accent);letter-spacing:2px;display:block;margin-bottom:4px}
 .finput{
